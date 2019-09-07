@@ -1,6 +1,6 @@
 # Vue
 ## 项目简介：
-1. 此项目是graintBaby项目的前端部分，后端代码可参阅这里。
+1. 此项目是graintBaby项目的前端部分，后端代码可参阅[这里](https://github.com/jacksparrow414/griantBaby)。
 2. 此项目主要是在[VueAdmin](https://panjiachen.github.io/vue-element-admin-site/zh/)上进行改造，结合ElementUI进行改造
 3. 前后端交互方式不再通过ajax，而是通过**axios**进行
 ## 项目结构：

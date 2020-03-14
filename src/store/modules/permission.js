@@ -2,7 +2,6 @@ import { asyncRoutes, constantRoutes } from '@/router'
 import { getInfo } from '@/api/user'
 
 const _import = require('@/router/import-test')
-import Layout from '@/layout'
 
 /**
  * Use meta.role to determine if the current user has permission
@@ -41,10 +40,10 @@ export function filterAsyncRoutes(routes, roles) {
 // 以上为老代码判断逻辑,下面的是新代码的逻辑
 
 function getAsyncMenu(menus) {
-  let routers = []
+  const routers = []
   if (menus && menus.length > 0) {
     menus.forEach(menu => {
-      let menuItem = {}
+      const menuItem = {}
       menuItem.path = menu.path
       menuItem.name = menu.name
       if (menu.icon) {
@@ -58,7 +57,7 @@ function getAsyncMenu(menus) {
           title: menu.title
           // icon: menuItem.icon
         }
-        let dhhk = 'table'
+        // const dhhk = 'table'
         // 这里是可以用变量替换的
         menuItem.component = _import(menu.component)
         // 这里两个import如果是变量替换的形式,只有上面这种才可以是动态的,下面这种如果路径用变量替换,会报错,具体区别在哪里还不清楚,路径只能写死

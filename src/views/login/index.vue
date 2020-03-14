@@ -55,14 +55,15 @@
       <div style="position:relative">
         <div class="tips">
           <span>{{ $t('login.username') }} : admin</span>
-          <span>{{ $t('login.password') }} : {{ $t('login.any') }}</span>
+          <span>{{ $t('login.password') }} : {{ $t('login.anyOr') }}</span>
         </div>
-        <div class="tips">
-          <span style="margin-right:18px;">
-            {{ $t('login.username') }} : editor
-          </span>
-          <span>{{ $t('login.password') }} : {{ $t('login.any') }}</span>
-        </div>
+        <!--2020-03-14 先注释掉-->
+        <!--<div class="tips">-->
+        <!--<span style="margin-right:18px;">-->
+        <!--{{ $t('login.username') }} : editor-->
+        <!--</span>-->
+        <!--<span>{{ $t('login.password') }} : {{ $t('login.any') }}</span>-->
+        <!--</div>-->
 
         <el-button class="thirdparty-button" type="primary" @click="showDialog=true">
           {{ $t('login.thirdparty') }}
@@ -81,12 +82,12 @@
 </template>
 
 <script>
-import { validUsername } from '@/utils/validate'
-import { loginInfo } from '@/api/dhb/login/main'
-import LangSelect from '@/components/LangSelect'
-import SocialSign from './components/SocialSignin'
+  import { validUsername } from '@/utils/validate'
+  import { loginInfo } from '@/api/dhb/login/main'
+  import LangSelect from '@/components/LangSelect'
+  import SocialSign from './components/SocialSignin'
 
-export default {
+  export default {
   name: 'Login',
   components: { LangSelect, SocialSign },
   data() {

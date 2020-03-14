@@ -16,6 +16,14 @@ export function getInfo(token) {
   })
 }
 
+export function getUserInfo(token) {
+  return request({
+    url: '/user/userInfo',
+    method: 'post',
+    params: { token }
+  })
+}
+
 export function logout() {
   return request({
     url: '/user/logout',

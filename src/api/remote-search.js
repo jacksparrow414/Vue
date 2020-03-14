@@ -11,7 +11,7 @@ export function searchUser(name) {
 export function transactionList(query) {
   return request({
     url: '/transaction/list',
-    method: 'get',
+    method: 'post',
     params: query
   })
 }

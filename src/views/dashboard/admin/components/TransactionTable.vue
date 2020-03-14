@@ -21,9 +21,9 @@
 </template>
 
 <script>
-import { transactionList } from '@/api/remote-search'
+  import { transactionList } from '@/api/remote-search'
 
-export default {
+  export default {
   filters: {
     statusFilter(status) {
       const statusMap = {
@@ -47,7 +47,7 @@ export default {
   methods: {
     fetchData() {
       transactionList().then(response => {
-        this.list = response.data.items.slice(0, 8)
+        this.list = response
       })
     }
   }

@@ -78,6 +78,7 @@ export default {
     username: 'Username',
     password: 'Password',
     any: 'any',
+    anyOr: '123456',
     thirdparty: 'Or connect with',
     thirdpartyTips: 'Can not be simulated on local, so please combine you own business simulation! ! !'
   },

@@ -1,5 +1,5 @@
 # Vue
-![](https://badgen.net/badge/License/MIT/blue) ![](https://badgen.net/badge/Vue-Element-Admin/3.0+/green) ![](https://badgen.net/badge/author/jacksparrow414/cyan)
+![](https://badgen.net/badge/License/MIT/blue) ![](https://badgen.net/badge/Vue-Element-Admin/3.0+/green) [![](https://badgen.net/badge/author/jacksparrow414/cyan)](https://github.com/jacksparrow414)
 ## 项目简介：
 1. 此项目是graintBaby项目的前端部分，后端代码可参阅[这里](https://github.com/jacksparrow414/griantBaby)。
 2. 此项目主要是在[VueAdmin](https://panjiachen.github.io/vue-element-admin-site/zh/)上进行改造，结合ElementUI进行改造
